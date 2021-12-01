@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NuGetReferenceUpdaterConsol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGetReferenceUpdater", "NuGetReferenceUpdater\NuGetReferenceUpdater.csproj", "{4560830A-03A3-49FA-95A2-8000D4894FD3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGetReferenceUpdaterTests", "NuGetReferenceUpdaterTests\NuGetReferenceUpdaterTests.csproj", "{A0C171F6-5545-419D-AE90-E33AB6AC12D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4560830A-03A3-49FA-95A2-8000D4894FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4560830A-03A3-49FA-95A2-8000D4894FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4560830A-03A3-49FA-95A2-8000D4894FD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0C171F6-5545-419D-AE90-E33AB6AC12D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0C171F6-5545-419D-AE90-E33AB6AC12D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0C171F6-5545-419D-AE90-E33AB6AC12D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0C171F6-5545-419D-AE90-E33AB6AC12D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

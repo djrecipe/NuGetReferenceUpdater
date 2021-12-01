@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 namespace NuGetReferenceUpdater
 {
     [JsonObject]
-    public class Settings
+    public class NuGetReferenceUpdaterSettings
     {
         [JsonProperty]
         public NuGetPackageSetting[] Packages { get; set; }

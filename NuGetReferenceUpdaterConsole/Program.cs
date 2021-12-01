@@ -7,8 +7,8 @@ namespace NuGetReferenceUpdaterConsole
     {
         static void Main(string[] args)
         {
-            //SettingsFactory factory = new SettingsFactory();
-            //Settings settings = new Settings();
+            //NuGetReferenceUpdaterSettingsFactory factory = new NuGetReferenceUpdaterSettingsFactory();
+            //NuGetReferenceUpdaterSettings settings = new NuGetReferenceUpdaterSettings();
             //string path = "NuGetReferenceUpdaterConsole.settings";
             //settings = factory.GetSettings(path);
             //foreach (NuGetPackageSetting pkg in settings.Packages)
