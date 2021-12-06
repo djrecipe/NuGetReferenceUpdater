@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+  <metadata minClientVersion="2.12">
+    <id>Test</id>
+    <title>Test</title>
+    <version>1.0.0</version>
+	<authors>n/a</authors>
+	<description>n/a</description>
+  </metadata>
+  <files>
+      <file src=".\test.txt" target=".\" />
+  </files>
+</package>

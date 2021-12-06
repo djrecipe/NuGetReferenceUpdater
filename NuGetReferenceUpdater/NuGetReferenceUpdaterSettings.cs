@@ -7,6 +7,10 @@ namespace NuGetReferenceUpdater
     public class NuGetReferenceUpdaterSettings
     {
         [JsonProperty]
+        public string NuGetExePath { get;set; }
+        [JsonProperty]
+        public string PackageRepositoryPath {get; set; }
+        [JsonProperty]
         public NuGetPackageSetting[] Packages { get; set; }
     }
     [JsonObject]
