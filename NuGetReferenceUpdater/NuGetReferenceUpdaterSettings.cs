@@ -13,6 +13,8 @@ namespace NuGetReferenceUpdater
     public class NuGetPackageSetting
     {
         [JsonProperty]
+        public string BuildConfiguration { get; set; }
+        [JsonProperty]
         public string NuspecPath { get; set; }
         [JsonProperty]
         public string PackageId { get; set; }
