@@ -59,5 +59,21 @@ namespace NuGetReferenceUpdater
             File.WriteAllText(project.Path, contents);
             return;
         }
+        public void UpdateNuGetPackageAndTargetProjects(string nuget_path, string repo_path, NuGetPackageSetting setting)
+        {
+            UpdateNuGetPackage(nuget_path, repo_path, setting);
+            foreach(TargetProjectSetting project in setting.TargetProjects)
+            {
+                UpdateTargetProject(setting, project);
+            }
+            return;
+        }
+        public void UpdateAll(NuGetReferenceUpdaterSettings settings)
+        {
+            foreach(NuGetPackageSetting package in settings.Packages)
+            {
+                UpdateNuGetPackageAndTargetProjects(settings.NuGetExePath, settings.PackageRepositoryPath, package);
+            }
+        }
     }
 }
