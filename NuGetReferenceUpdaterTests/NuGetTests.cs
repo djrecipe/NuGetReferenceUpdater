@@ -59,6 +59,15 @@ namespace NuGetReferenceUpdaterTests
             // update csproj
             NuGetReferenceUpdaterEngine engine = new NuGetReferenceUpdaterEngine();
             engine.UpdateTargetProject(pkg_setting, proj_setting);
+            // assertion(s)
+            string text = File.ReadAllText(csproj_path);
+            Assert.True(text.Contains(pkg_ver));
+            // change version
+            pkg_setting.PackageVersion = pkg_ver = "7.7.7";
+            engine.UpdateTargetProject(pkg_setting, proj_setting);
+            // assertion(s)
+            text = File.ReadAllText(csproj_path);
+            Assert.True(text.Contains(pkg_ver));
         }
     }
 }
